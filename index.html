@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048</title>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body onload="flushView()">
+    <div class="main">
+        <div class="div-head">
+            <p id="title"><blob>2048</blob></p>
+            <button id="reset" onclick="restartGame()">new game</button>
+            <p>score:<span id="score">0</span></p>
+        </div>
+        <div class="board">
+            <div class="grid" id="square00"></div>
+            <div class="grid" id="square01"></div>
+            <div class="grid" id="square02"></div>
+            <div class="grid" id="square03"></div>
+            <div class="grid" id="square10"></div>
+            <div class="grid" id="square11"></div>
+            <div class="grid" id="square12"></div>
+            <div class="grid" id="square13"></div>
+            <div class="grid" id="square20"></div>
+            <div class="grid" id="square21"></div>
+            <div class="grid" id="square22"></div>
+            <div class="grid" id="square23"></div>
+            <div class="grid" id="square30"></div>
+            <div class="grid" id="square31"></div>
+            <div class="grid" id="square32"></div>
+            <div class="grid" id="square33"></div>
+        </div>
+    </div>
+    <div id="alertBox">
+        <p id="total_title">You lose the game !</p>
+        <p>总共得分: &nbsp;<span id="total_score">0</span></p>
+        <p><button onclick="startGameAgain()">再来一次</button></p>
+    </div>
+</body>
+</html>
